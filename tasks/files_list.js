@@ -13,7 +13,7 @@
 module.exports = function(grunt) {
 
   // Link to Underscore.js
-  var _ = grunt.util._;
+  var _ = require('lodash');
   var path = require('path');
 
   // Please see the Grunt documentation for more information regarding task
