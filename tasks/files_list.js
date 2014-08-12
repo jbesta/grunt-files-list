@@ -13,7 +13,7 @@
 module.exports = function(grunt) {
 
   // Link to Underscore.js
-  var _ = require('lodash');
+  var _ = grunt.util._;
   var path = require('path');
 
   // Please see the Grunt documentation for more information regarding task
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
       jsTemplate: '<script src="<%= pathPrefix %><%= filename %><%= pathSuffix %>"></script>',
-      cssTemplate: '<link rel="stylesheet" type="text/css" href="<%= pathPrefix %><%= filename %><%= pathSuffix %>"></link>',
+      cssTemplate: '<link rel="stylesheet" type="text/css" href="<%= pathPrefix %><%= filename %><%= pathSuffix %>"/>',
       pathPrefix: '',
       pathSuffix: '',
       punctuation: '.',
